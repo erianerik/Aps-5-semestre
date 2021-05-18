@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="login">
+            <div class="login-content">
+                <div class="login-content__form-container">
+                    <form action="./php/login.php" method="POST" class="login-content__form">
+                        <fieldset class="login-content__form__header">
+                            <h2 class="form__header__title">Log in.</h2>
+                            <p class="form__header__description">Entre com seu usuário e senha para prosseguir.</p>
+                        </fieldset>
+
+                        <fieldset class="form__content__form__inputs">
+                            <label class="label-pattern" for="user">Digite seu usuário </label>
+                            <input type="text" class="input-pattern" id="user" placeholder="Ex.: erianerik"
+                                name="username">
+
+                            <label class="label-pattern" for="password">Digite sua senha </label>
+                            <input type="password" class="input-pattern" id="password" placeholder="*******"
+                                name="password">
+
+                            <input type="button" value="log in" class="button-pattern button-pattern--submit">
+                            <p class="login-fail">Usuário ou senha incorretos</p>
+
+                            <a href="registerUser.html" class="forget-password">Não é cadastrado? Cadastra-se</a>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="login-content__welcome">
+                    <h2 class="login-content__welcome__title">Seja bem vindo!</h2>
+                    <h2 class="login-content__welcome__main-title">Bom te ver novamente</h2>
+
+                    <figure class="login-content__welcome__illustration">
+                        <img src="img/login-illustration.svg" alt="" class="illustration-img">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <img src="./img/nav-logo.svg" alt="" class="menu-logo">
+        <ul class="menu__nav__list">
+            <li><a href="homeAdmin.html">Inicio</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <div class="home-receive">
+        <header class="home-receive__header">
+            <h2 class="title-pattern">Lista de usuários</h2>
+        </header>
+        <table class="table-pattern">
+            <thead>
+                <tr>
+                    <th>Login</th>
+                    <th>tipo de Login </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <img src="./img/chat-icon.svg" alt="" class="chat-icon">
+
+
+        <div class="chat">
+            <div class="chat-container">
+                <header class="chat__header">
+                    <img src="./img/chat-delete-icon.svg" alt="" class="chat__header__close trash">
+                    <img src="./img/chat-close-icon.svg" alt="" class="chat__header__close close">
+                </header>
+
+                <div class="chat__body">
+                </div>
+
+                <form action="./php/chat.php" class="chat-form">
+                    <input type="text" class="input-pattern" id="message" placeholder="Digite sua mensagem">
+                    <input type="button" class="button-pattern button-pattern--chat" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+        <p class="action">./php/users.php</p>
+        <script src="./js/users.js"></script>
+        <script src="./js/chat.js"></script>
+</body>
+
+</html>

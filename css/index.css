@@ -1,0 +1,112 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.login-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login-content__form-container {
+    width: 40%;
+    height: 100%;
+}
+
+.login-content__form {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+
+.login-content__form__main-title {
+    font-size: 1.5rem;
+}
+
+.login-content__form__header {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+}
+
+.form__header__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form__header__description {
+    font-size: .9rem;
+    margin: 1rem auto;
+    color: #c4c4c4;
+}
+
+.form__content__form__inputs {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-pattern {
+    margin: .5rem 0;
+    margin-bottom: 2rem;
+}
+
+.button-pattern--submit {
+    height: 3rem;
+    font-size: 1.2rem;
+    min-height: 3rem;
+}
+
+.forget-password {
+    margin: 2rem 0;
+    color: #3CD16C;
+    text-align: center;
+}
+
+.login-content__welcome {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #edfff7;
+}
+
+.login-content__welcome__title {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.login-content__welcome__main-title {
+    font-size: 2rem;
+}
+
+.login-content__welcome__illustration {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.illustration-img {
+    width: 55%;
+    margin-top: 2rem;
+}

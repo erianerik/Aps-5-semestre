@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/register.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Jquey -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="register-website">
+            <div class="register-website__content">
+                <div class="register-website__header">
+                    <figure class="register-website__header__illustration">
+                        <img src="./img/register-user-illustration.svg" alt=""
+                            class="illustration-img illustration-img--user">
+                    </figure>
+
+                    <h2 class="register-website__header__title">Cadastro de usuario</h2>
+                    <p class="register-website__header__description">Isso levará apenas alguns minutinhos para ser
+                        completado!</p>
+
+                </div>
+
+                <div class="register-website__form-container">
+                    <form action="./php/registerUser.php" class="register-website__form">
+                        <fieldset class="form__content__form__inputs">
+
+                            <label class="label-pattern" for="name-user">Digite seu login: </label>
+                            <input type="text" class="input-pattern" id="login" placeholder="Ex.: carlosAugusto">
+
+                            <label class="label-pattern" for="user-age">Digite sua senha: </label>
+                            <input type="password" class="input-pattern" id="password-login" placeholder="Ex.: ****">
+
+
+                            <div class="inputs-actions">
+                                <input type="button" value="Cancelar" class="button-pattern button-pattern--cancelar">
+                                <input type="button" value="Cadastrar" class="button-pattern button-pattern--submit">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="alert success success-user user">
+        <p class="alert-message">Usuário inserido com sucesso!</p>
+    </div>
+
+    <div class="alert success success-user update">
+        <p class="alert-message">Usuário alterado com sucesso!</p>
+    </div>
+
+    <p class="action action-search-email">./php/email.php</p>
+    <p class="action action-update">./php/updateUser.php</p>
+    <script src="./js/registerUser.js"></script>
+</body>
+
+</html>

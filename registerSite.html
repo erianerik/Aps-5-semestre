@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/register.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Jquey -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <img src="./img/nav-logo.svg" alt="" class="menu-logo">
+        <ul class="menu__nav__list">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="sites.html">Sites</a></li>
+            <li><a href="registerUser.html">Perfil</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="register-website">
+            <div class="register-website__content">
+                <div class="register-website__header">
+                    <figure class="register-website__header__illustration">
+                        <img src="./img/register-website-illustration.svg" alt="" class="illustration-img">
+                    </figure>
+
+                    <h2 class="register-website__header__title">Cadastro de site</h2>
+                    <p class="register-website__header__description">Isso levará apenas alguns minutinhos para ser
+                        completado!</p>
+
+                </div>
+
+                <div class="register-website__form-container">
+                    <form action="./php/registerSite.php" method="POST" class="register-website__form">
+                        <fieldset class="form__content__form__inputs">
+                            <label class="label-pattern" for="name-site">Digite nome do site: </label>
+                            <input type="text" class="input-pattern" id="name-site" name="name-site"
+                                placeholder="Ex.: S.O.S Amazônia">
+
+                            <label class="label-pattern" for="url-site">Digite o link(Url) do site: </label>
+                            <input type="text" class="input-pattern" id="url-site" name="url-site"
+                                placeholder="Ex.: sosamazonia.com.br">
+
+                            <label class="label-pattern" for="description-site">Digite a descrição do site: </label>
+                            <textarea name="website-description" id="description-site" name="description-site"
+                                class="textarea-pattern" placeholder="Digite sua descrição aqui..."></textarea>
+
+                            <div class="inputs-actions">
+                                <input type="button" value="Cancelar" class="button-pattern button-pattern--cancelar">
+                                <input type="button" value="Cadastrar" class="button-pattern button-pattern--submit">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <img src="./img/chat-icon.svg" alt="" class="chat-icon">
+
+
+    <div class="chat">
+        <div class="chat-container">
+            <header class="chat__header">
+                <img src="./img/chat-delete-icon.svg" alt="" class="chat__header__close trash">
+                <img src="./img/chat-close-icon.svg" alt="" class="chat__header__close close">
+            </header>
+
+            <div class="chat__body">
+            </div>
+
+            <form action="./php/chat.php" class="chat-form">
+                <input type="text" class="input-pattern" id="message" placeholder="Digite sua mensagem">
+                <input type="button" class="button-pattern button-pattern--chat" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <div class="alert success">
+        <p class="alert-message">Site inserido com sucesso!</p>
+    </div>
+
+    <div class="alert success update">
+        <p class="alert-message">Site alterado com sucesso!</p>
+    </div>
+
+    <p class="action action-update">./php/updateSite.php</p>
+
+    <script src="./js/cadastrarSite.js"></script>
+</body>
+
+</html>

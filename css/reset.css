@@ -1,0 +1,331 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.input-pattern {
+    box-sizing: border-box;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    border: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    color: #201916;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textarea-pattern {
+    box-sizing: border-box;
+    height: 5rem;
+    padding: 1rem;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.select-pattern {
+    padding: .8rem;
+    height: 3rem;
+}
+
+::placeholder {
+    color: #c4c4c4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-pattern {
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #3CD16C;
+}
+
+.button--pattern--outline {
+    color: #201916;
+    background-color: #fff;
+    border: 1px solid #3CD16C;
+}
+
+.button-pattern--round {
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.table-pattern {
+    width: 100%;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.table-pattern thead th {
+    background-color: #3CD16C;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.table-pattern th, .table-pattern td {
+    padding: 1rem;
+}
+
+.table-pattern tbody tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.table-pattern tbody tr:nth-of-type(even) {
+    background-color: #edfff7;
+}
+
+.table-pattern tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.table-pattern .td-icon {
+    width: 2rem;
+}
+
+/* Chat */
+
+.chat-icon {
+    width: 4rem;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+.chat {
+    display: none;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    overflow: auto;
+    right: 50px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.chat-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.chat__header {
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px 10px 0 0;
+    background-color: #3CD16C;
+}
+
+.chat__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chat__body__message {
+    box-sizing: border-box;
+    width: auto;
+    max-width: 250px;
+    min-width: 115px;
+    height: auto;
+    min-height: 62px;
+    margin-top: 15px;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.chat__body__message--user {
+    color: #fff;
+    background: #3CD16C;
+    float: right;
+    position: relative;
+    margin-right: 15px;
+}
+
+.chat__body__message--user:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-color: transparent transparent transparent #3CD16C;
+    right: -14px;
+    top: 31px;
+}
+
+.chat__body__message--receiver {
+    align-self: flex-start;
+    position: relative;
+    background-color: #fff;
+    margin-left: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.chat__body__message--receiver:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-color: transparent transparent transparent #fff;
+    left: -15px;
+    top: 31px;
+    transform: rotate(173deg);
+}
+
+.chat__body__message--user:last-child, .chat__body__message--receiver:last-child {
+    margin-bottom: 20%;  
+} 
+
+.chat__body__message--user:first-child, .chat__body__message--receiver:first-child {
+    margin-top: 15%; 
+} 
+
+.text {
+    overflow-wrap: break-word;
+}
+
+.chat__header {
+    box-sizing: border-box;
+    width: 300px;
+    height: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.chat__header__close {
+    width: 1rem;
+}
+
+.chat-form {
+    width: 282px;
+    height: auto;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+}
+
+
+
+.button-pattern--chat {
+    width: 100%;
+}
+
+.login-fail {
+    display: none;
+    margin-top: 1rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.action {
+    display: none;
+}
+
+.alert {
+    display: none;
+    width: 16rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+
+.success {
+    background-color: #64e48d;
+}
+
+.erro {
+    background-color: #e46464;
+}
+
+.alert-message {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nothing-data {
+    font-size: 1.3rem;
+    color: #201916;
+    text-align: center;
+    margin: 1rem;
+}
+
+.success-user {
+    width: 18rem;
+}
+
+.trash {
+    margin-right: 10px;
+}
